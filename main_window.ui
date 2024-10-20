@@ -106,7 +106,7 @@
        </layout>
       </item>
       <item>
-       <widget class="QPushButton" name="pushButton">
+       <widget class="QPushButton" name="buttonDecypher">
         <property name="text">
          <string>Дешифровать</string>
         </property>
