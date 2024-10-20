@@ -11,3 +11,9 @@ Controller::Controller(QWidget *parent) : QMainWindow(parent) {
 Controller::~Controller() {
     delete this->ui;
 }
+
+
+void Controller::on_buttonOpenFile_clicked() {
+
+}
+

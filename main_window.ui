@@ -7,37 +7,52 @@
     <x>0</x>
     <y>0</y>
     <width>500</width>
-    <height>180</height>
+    <height>202</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
     <width>500</width>
-    <height>180</height>
+    <height>200</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
     <width>500</width>
-    <height>180</height>
+    <height>202</height>
    </size>
   </property>
   <property name="windowTitle">
    <string>МиСКЗИ, ЛР2</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="minimumSize">
+    <size>
+     <width>500</width>
+     <height>200</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>500</width>
+     <height>200</height>
+    </size>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
     <property name="leftMargin">
      <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>6</number>
     </property>
     <property name="rightMargin">
      <number>0</number>
     </property>
+    <property name="bottomMargin">
+     <number>6</number>
+    </property>
     <item>
-     <layout class="QHBoxLayout" name="horizontalLayout">
-      <property name="spacing">
-       <number>6</number>
-      </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
       <property name="leftMargin">
        <number>6</number>
       </property>
@@ -45,35 +60,55 @@
        <number>6</number>
       </property>
       <item>
-       <widget class="QLabel" name="labelInputFile">
-        <property name="minimumSize">
-         <size>
-          <width>0</width>
-          <height>20</height>
-         </size>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <property name="spacing">
+         <number>6</number>
         </property>
-        <property name="maximumSize">
-         <size>
-          <width>16777215</width>
-          <height>20</height>
-         </size>
+        <property name="leftMargin">
+         <number>0</number>
         </property>
-        <property name="text">
-         <string>Файл для дешифрования:</string>
+        <property name="rightMargin">
+         <number>0</number>
         </property>
-       </widget>
+        <item>
+         <widget class="QLabel" name="labelInputFile">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Файл для дешифрования:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEditInputFile">
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="buttonOpenFile">
+          <property name="text">
+           <string>Выбрать..</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
       </item>
       <item>
-       <widget class="QLineEdit" name="lineEditInputFile">
-        <property name="readOnly">
-         <bool>true</bool>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="buttonOpenFile">
+       <widget class="QPushButton" name="pushButton">
         <property name="text">
-         <string>Выбрать..</string>
+         <string>Дешифровать</string>
         </property>
        </widget>
       </item>

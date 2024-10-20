@@ -17,6 +17,9 @@ public:
     Controller(QWidget *parent = nullptr);
     ~Controller();
 
+private slots:
+    void on_buttonOpenFile_clicked();
+
 private:
     Ui::Controller *ui;
 
