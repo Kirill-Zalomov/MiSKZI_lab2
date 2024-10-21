@@ -9,11 +9,17 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    atbash_decipher.cpp \
+    file_interactor.cpp \
     main.cpp \
-    controller.cpp
+    controller.cpp \
+    match_finder.cpp
 
 HEADERS += \
-    controller.h
+    atbash_decipher.h \
+    controller.h \
+    file_interactor.h \
+    match_finder.h
 
 FORMS += \
     main_window.ui
